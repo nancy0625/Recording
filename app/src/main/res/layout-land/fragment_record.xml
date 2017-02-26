@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/pink"
+>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/record_title_label"
+        style="?android:listSeparatorTextViewStyle"/>
+  <EditText
+      android:id="@+id/record_title"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="16dp"
+      android:layout_marginRight="16dp"
+      android:hint="@string/record_title_hint"/>
+
+  <EditText
+      android:id="@+id/record_phone"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="16dp"
+      android:layout_marginRight="16dp"
+      android:hint="@string/record_phone_hint"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_calendar_text"
+        android:text="@string/record_details_label"
+        style="?android:listSeparatorTextViewStyle"/>
+
+  <LinearLayout
+      android:orientation="horizontal"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="16dp"
+      android:layout_marginRight="16dp">
+    <Button
+          android:id="@+id/record_date"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"/>
+
+
+    <Button
+        android:id="@+id/record_tel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/record_tel_label"
+        android:layout_weight="0.01"
+    />
+    <Button
+        android:id="@+id/record_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/record_camera_label"
+        android:layout_weight="0.01"
+    />
+    <Button
+        android:id="@+id/record_found"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/record_found_label"
+        android:layout_weight="0.01"
+    />
+
+
+    <CheckBox
+        android:id="@+id/record_solved"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/record_solved_label"
+        android:layout_weight="1"/>
+  </LinearLayout>
+  <ImageView
+      android:id="@+id/picture"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:padding="40dp"
+      android:layout_gravity="center_horizontal"/>
+</LinearLayout>
